@@ -1,0 +1,99 @@
+DOCUMENTAÇÃO QUESTÃO 3.
+
+Dentro do pacote questão 3 existem 3 arquivos.
+1- classe principal de exercução
+2- classe objeto
+3-classe teste
+
+ESPECIFICAÇÃO DA CLASSE PRINCIPAL.
+1-INFORMAÇÕES GERAIS.
+    dentro da classe principal foi criando um objeto criptgrafado, este objeto será responsavel por instanciar
+    os atributos: {texto, tamanhoTexto, matrizString}.
+    e também fazer as chamadas dos 2 metodos necessários para a exercução da aplicação.
+    foi optado pelo uso da API interna do Java, (JOptionPane) para entrada de dados do usuario, para permitir
+    que a experiencia do usuario fosse assim o mais agradavel possivel.
+    de acordo com a especificação da atividade foi observado a necessidade de 2 variaveis de controle.
+
+2-Nomes Variaveis:
+    2.1- SQTRTAMANHO
+    2.1.1-
+         A variavel sqtrTamanho é responsavel por extrair a raiz quadrada do tamanho do texto, para a partir dela,
+         os metodos terem,controle dos loops e também por o intervalo entre os caracteres a serem impressos na
+         criptografia do texto.
+
+    2.2-TEXTOSEMESPACO
+    2.2.1-
+        A variavel textoSemEspaco é responsavel, por tirar todos os espaços entre o inicio e o fim do texto recebido
+        pelo usuario, permitindo assim que a contagem do tamanho do texto para a analise da raiz quadrada seja com
+        apenas com caracteres alfanúmericos.
+
+3-OBJETOS:
+    3.1- CRIPTOGRAFIA
+
+    3.1.1-
+        O nome da instancia do objeto TextoCriptgrafico foi criptgrafia, para permitir uma rapida compreensão
+        Por aqueles que tiverem acesso ao codígo fonte deste projeto.
+    3.1.2-
+        dentro da classe principal o objeto criptografia, faz 2 chamadas de metodos, uma para quebrar o texto
+        e inserir dentro do atributo da classe chamada matrizString, e o segundo metodo é responsavel por
+        imprimir os novos caracteres formatados com a criptgrafia proposta.
+
+4- ARQUIVO CLASSE TEXTOCRIPTOGRAFICO.
+    4.1- ATRIBUTOS:
+
+        TEXTO(STRING)
+        TAMANHOTEXTO(INTEGER)
+        MATRIZSTRING(MATRIZ CHARECTER)
+
+    4.2- METODOS:
+
+         PREENCHIMENTOMATRIZTEXTO
+         MPRIMIRTEXTOCRIPTGRAFADO
+
+    4.2.1 - METODO PREENCHIMENTOMATRIZTEXTO.
+        O metodo preenchimentoMatrizTexto, foi definida sendo do tipo matriz de caracter, o motivo da decisão foi
+        ela retornar a matriz que será utilizada como parametro do metodo de imprimirTextoCriptgrafado, este metodo
+        recebe alguns parametros que são: tamanho do texto, raiz quadrada do tamanho e o texto sem espaços,
+        para que assim os loops dentro do metodo consigam quebrar toda a string e faça a inserção dos caracteres
+        dentro da matriz criada dentro do metodo e que será utilizada como retorno do metodo para o atributo
+        matrizString do objeto.
+        o metodo contem uma variavel do tipo INTEGER chamada de posicaoCharecter responsavel por ser o parametro de
+        busca do metodo charAt(), apos a quebra dentro do laço esta variavel é incrementada, permitindo assim, que
+        as buscas do novo caractere seja sempre o proximo.
+        observe também que dentro do laço existe um fluxo de decisão verificando se o valor da variavel posicaoCharecter
+        chegou no limite aceitavel pela matriz.
+
+    4.2.2- METODO IMPRIMIRTEXTOCRIPTGRFADO.
+        O metodo imprimirTextoCriptografado foi especificado com o tipo void, pois sabendo assim que ele tem a função
+        de imprimir no console o resultado da criptografia, não se faz necessário retorno para a mesma, este metodo
+        tem como parametro, a matriz que foi gerada pelo metodo de preenchimentoMatrizTexto() e a raiz quadrada
+        do tamanho do texto sem espaços.
+        dentro do metodo foi criada uma variavel local chamada de contadorFrequencia, responsavel por da a frequencia
+        de impressões de caractere, onde ele fará a analise entre linha e coluna da matriz, mas permitir o acesso
+        apenas entre o valor que está entre ela e a posição da coluna.
+        4.2.2.1-EXEMPLO DE TRABALHO DA VARIAVEL CONTADOR DE FREQUENCIA.
+                levaleramos em consideração que a raiz quadrada do tamanho do texto tenha sido 4.
+                uma matriz 4 x 4 é criada
+                COLUNAS
+                __________
+                |[0A][1]A[2A][3A]| LINHAS
+                |[0B][1B][2B][3B]|
+                |[0C][1C][2C][3]C|
+                |[0D][1D][2D][3D]|
+
+                inicio do loop: linha =  0,  coluna  = 0,  contadorFrequencia = 0
+                o resultado da impressão será = 0A. e ignorará dentro da linha 0 qualquer outro caractere.
+                a variavel contador de frequencia fará que seja permitido apenas um unico caractere em uma posição
+                definida da matriz.
+
+        o metodo ainda contem 3 loops, onde o primeiro é responsavel pelo imcremento da variavel contadorFrencia e por
+        imprimir um espaço vazio sempre que os loops internos terminarem. ainda dentro do metodo existe um fluxo de
+        condição, onde faz a verificação, se a condição de impressão de caractere será aceito ou não.
+
+5- CLASSES DE TESTES-
+
+
+
+
+
+

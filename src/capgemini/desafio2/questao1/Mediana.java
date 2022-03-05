@@ -4,9 +4,17 @@ import java.util.Collections;
 import java.util.List;
 
 public class Mediana {
-	
+
+	private int numero;
 	private List<Integer> numeros;
-	
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
 
 	public List<Integer> getNumeros() {
 		return numeros;
@@ -15,17 +23,13 @@ public class Mediana {
 	public void setNumeros(List<Integer> numeros) {
 		this.numeros = numeros;
 	}
-	
-	 int isListaImpar(List<Integer> numeros) {
+
+	void isListaImpar(List<Integer> numeros) {
 		if (numeros.size() % 2 == 1) {
 			Collections.sort(numeros);
 			int mediana = (numeros.size() / 2);
 			System.out.print("A mediana da Lista de numeros é = " + numeros.get(mediana));
-
-			return mediana;
 		}
-		return 0;
-		
 	}
 	
 	 void isListapar(List<Integer> numeros) {
@@ -34,7 +38,6 @@ public class Mediana {
 			Collections.sort(numeros);
 			int mediana = (numeros.size() / 2);
 			System.out.print("A mediana da Lista de numeros é = " + numeros.get(mediana));
-			
 		}
 	}
 	

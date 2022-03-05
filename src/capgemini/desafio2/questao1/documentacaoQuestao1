@@ -1,0 +1,67 @@
+DOCUMENTAÇÃO QUESTÃO 1.
+
+Dentro do pacote questão 3 existem 3 arquivos.
+1- classe principal de exercução
+2- classe objeto
+3-classe teste
+
+ESPECIFICAÇÃO DA CLASSE PRINCIPAL.
+1-INFORMAÇÕES GERAIS.
+    dentro da classe principal foi criando um objeto Mediana, este objeto será responsavel por instanciar
+    os atributos: {numero,(list)numeros}.
+    e também fazer as chamadas dos 2 metodos necessários para a exercução da aplicação.
+    foi optado pelo uso da API interna do Java, (JOptionPane) para entrada de dados do usuario, para permitir
+    que a experiencia do usuario fosse assim o mais agradavel possivel.
+
+
+2-Nomes Variaveis:
+    2.1- PERGUNTA.
+    2.1.1-
+        A variavel pergunta é responsavel por da a condição para o loop da classe principal.
+
+    2.2-NUMEROSS
+    2.2.1-
+        A variavel numeros é uma variavel do tipo List, para armazenar os valores escolhidos pelo usuario e depois
+        transferir para o atributo List do objeto.
+
+
+3-OBJETOS:
+    3.1- LISTANUMEROS
+
+    3.1.1-
+        A variavel de instancia listaNumeros foi criada para da mais perfomace a classe principal, recebendo os dados
+        do usuario e fazendo as chamadas dos metodos necessários para mostrar a mediana dos valores escolhidos.
+
+
+4- ARQUIVO CLASSE MEDIANA.
+    4.1- ATRIBUTOS:
+        NUMERO(INTEGER)
+        NUMEROS(LIST INTEGER)
+
+    4.2- METODOS:
+
+         ISLISTAIMPAR
+         ISLISTAPAR
+
+    4.2.1 - ISLISTIMPAR.
+        O metodo isListaImpar() recebe como parametro a lista de numeros e faz a impressão do valor da mediana
+        do tamanho da lista, mostrando assim qual o valor da lista representa a mediana da mesma.
+        dentro do metodo é feita a ordenação da lista, permitindo assim uma busca de forma correta do valor da mediana,
+        existe ainda um laço condicional que analisa se o tamanho da lista é um valor impar,
+        caso a condição seja respeitada ele fará o calculo de dividir a lista por 2 e imprimir o valor central dela.
+
+
+
+    4.1.2- ISLISTAPAR.
+        O metodo isListaPar() recebe como parametro a lista de numeros e faz a impressão do valor da mediana.
+        observação:
+                   "este metodo só será executado na aplicação, caso o usuario não forneça um quantidade de numeros
+                   impares."
+        dentro do metodo é feita a ordenação da lista, permitindo assim uma busca de forma correta do valor da mediana,
+        existe ainda um laço condicional que analisa se o tamanho da lista é um valor par,
+        caso a condição seja respeitada ele ADICIONARÁ o valor 0 a lista para que assim, exista a possibilidade de
+        buscar o valor da mediada, após a nova insersão a lista é ordenada e fará o calculo de dividir a lista por 2
+        e imprimir o valor central dela.
+
+
+5- CLASSES DE TESTES-
