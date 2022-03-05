@@ -1,4 +1,4 @@
-package capgemini.desafio2;
+package capgemini.desafio2.questao1;
 
 import java.util.Collections;
 import java.util.List;

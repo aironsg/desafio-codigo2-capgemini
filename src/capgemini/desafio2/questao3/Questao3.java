@@ -1,4 +1,4 @@
-package capgemini.desafio2;
+package capgemini.desafio2.questao3;
 
 import javax.swing.JOptionPane;
 
