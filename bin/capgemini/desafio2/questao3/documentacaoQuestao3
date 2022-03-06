@@ -45,12 +45,12 @@ ESPECIFICAÇÃO DA CLASSE PRINCIPAL.
         TAMANHOTEXTO(INTEGER)
         MATRIZSTRING(MATRIZ CHARECTER)
 
-    4.1- METODOS:
+    4.2- METODOS:
 
          PREENCHIMENTOMATRIZTEXTO
          MPRIMIRTEXTOCRIPTGRAFADO
 
-    4.1.1 - METODO PREENCHIMENTOMATRIZTEXTO.
+    4.2.1 - METODO PREENCHIMENTOMATRIZTEXTO.
         O metodo preenchimentoMatrizTexto, foi definida sendo do tipo matriz de caracter, o motivo da decisão foi
         ela retornar a matriz que será utilizada como parametro do metodo de imprimirTextoCriptgrafado, este metodo
         recebe alguns parametros que são: tamanho do texto, raiz quadrada do tamanho e o texto sem espaços,
@@ -63,7 +63,7 @@ ESPECIFICAÇÃO DA CLASSE PRINCIPAL.
         observe também que dentro do laço existe um fluxo de decisão verificando se o valor da variavel posicaoCharecter
         chegou no limite aceitavel pela matriz.
 
-    4.1.2- METODO IMPRIMIRTEXTOCRIPTGRFADO.
+    4.2.2- METODO IMPRIMIRTEXTOCRIPTGRFADO.
         O metodo imprimirTextoCriptografado foi especificado com o tipo void, pois sabendo assim que ele tem a função
         de imprimir no console o resultado da criptografia, não se faz necessário retorno para a mesma, este metodo
         tem como parametro, a matriz que foi gerada pelo metodo de preenchimentoMatrizTexto() e a raiz quadrada
@@ -71,7 +71,7 @@ ESPECIFICAÇÃO DA CLASSE PRINCIPAL.
         dentro do metodo foi criada uma variavel local chamada de contadorFrequencia, responsavel por da a frequencia
         de impressões de caractere, onde ele fará a analise entre linha e coluna da matriz, mas permitir o acesso
         apenas entre o valor que está entre ela e a posição da coluna.
-        4.1.2.1-EXEMPLO DE TRABALHO DA VARIAVEL CONTADOR DE FREQUENCIA.
+        4.2.2.1-EXEMPLO DE TRABALHO DA VARIAVEL CONTADOR DE FREQUENCIA.
                 levaleramos em consideração que a raiz quadrada do tamanho do texto tenha sido 4.
                 uma matriz 4 x 4 é criada
                 COLUNAS

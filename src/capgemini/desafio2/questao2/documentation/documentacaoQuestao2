@@ -1,0 +1,63 @@
+DOCUMENTAÇÃO QUESTÃO 2.
+
+Dentro do pacote questão 3 existem 3 arquivos.
+1- classe principal de exercução
+2- classe objeto
+3-classe teste
+
+ESPECIFICAÇÃO DA CLASSE PRINCIPAL.
+1-INFORMAÇÕES GERAIS.
+    dentro da classe principal foi criando um objeto Mediana, este objeto será responsavel por instanciar
+    os atributos: {tamanhoVetor,diferencialPares,(array)numeros}.
+    e também fazer as chamadas dos 2 metodos necessários para a exercução da aplicação.
+    foi optado pelo uso da API interna do Java, (JOptionPane) para entrada de dados do usuario, para permitir
+    que a experiencia do usuario fosse assim o mais agradavel possivel.
+
+
+2-Nomes Variaveis:
+    não contem, variaveis globais na classe principal
+
+3-OBJETOS:
+    3.1- PARES
+
+    3.1.1-
+        A variavel de instancia pares foi criada para da mais perfomace a classe principal, recebendo os dados
+        do usuario e fazendo as chamadas dos metodos necessários para preencher o array e imprimir o resultado.
+
+
+4- ARQUIVO CLASSE PARESNUMEROS.
+    4.1- ATRIBUTOS:
+        TAMANHOVETOR(INTEGER)
+        DIFERENCIALPARES
+        NUMEROS(ARRAY INTEGER)
+
+    4.2- METODOS:
+
+         PREENCHERVETOR
+         CONTADORPARES
+
+    4.2.1 - PREENCHERVETOR.
+        O metodo preencherVetor() é do tipo vetor de integer e  recebe como parametro o tamanho do array definido pelo
+        usuario.
+        dentro do metodo é criado um vetor que será preenchido dentro do loop com chamada de dados ao usuario
+        após o preenchimento do vetor este é retornado para ser utilizado dentro do metodo contadorPares().
+
+
+
+    4.1.2- CONTADORPARES.
+        O metodo contadorPares() é um metodo de retorno vazio, pois ele fará o calculo dos pares e mostrará na tela
+        o seu resultado este metodo recebe como parametro o array de integer e o diferencial dos pares.
+        dentro do metodo foi criada uma variavel de controle chamada contadorDePares que tem por finalidade contar
+        quantas vezes dentro do fluxo foi achado os valores pares entre eles.
+
+        4.1.2.1-EXEMPLO VARIAVEL CONTADORDEPARES.
+            Imagine que o array esta composto dos seguintes valores (1,5,3,4,2)
+            e o diferencial entre os pares seja do valor 2.
+            o contador pares verificará se o valor atual da posição do array analisa somando o diferencial é igual á
+            o valor que está posição de salto do array.
+            por exemplo:posição atual será 1 e o diferencial escolhido será 2
+            1 + 2 = 3, se na posição atual tem 1 e pulando 2 posições do array que é o diferencial, for achado o valor
+            3, então existe um par e assim a variavel é incrementada, esta analise ocorrerá tanto crescente quanto
+            decrecente no vetor.
+        após a contagem dos pares é impresso no console o resultado, mostrando assim a quantidade de pares encontrados.
+

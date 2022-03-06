@@ -1,4 +1,4 @@
-package capgemini.desafio2.questao2;
+package capgemini.desafio2.questao2.domain;
 
 import javax.swing.*;
 
@@ -32,7 +32,7 @@ public class ParesNumeros {
         this.numeros = numeros;
     }
 
-    int[] preencheVetor(int tamanhoVetor){
+    public int[] preencheVetor(int tamanhoVetor){
         int[] numeros = new int[tamanhoVetor];
         for(int i = 0; i < numeros.length; i++) {
             //Laço responsavel por obter os valores do ususario e armazenar no vetor
@@ -42,7 +42,7 @@ public class ParesNumeros {
         return numeros;
     }
 
-    void contadorPares(int[] vetorNumeros, int diferencial){
+    public int contadorPares(int[] vetorNumeros, int diferencial){
         int contadorDePares = 0;
         for (Integer numero : vetorNumeros) {
             //laço responsavel por percorrer o vetor verificando os intervalos
@@ -52,6 +52,6 @@ public class ParesNumeros {
                 }
             }
         }
-        System.out.println("Quantidade de pares : " + contadorDePares);
+        return contadorDePares;
     }
 }

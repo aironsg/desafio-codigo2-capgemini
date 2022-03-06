@@ -1,4 +1,4 @@
-package capgemini.desafio2.questao3;
+package capgemini.desafio2.questao3.domain;
 
 public class TextoCriptografico {
 
@@ -31,7 +31,7 @@ public class TextoCriptografico {
     }
 
 
-    char[][] preencherMatrizTexto(int tamanhoTexto, int stqrTamanho, String textoSemEspaco){
+    public char[][] preencherMatrizTexto(int tamanhoTexto, int stqrTamanho, String textoSemEspaco){
 
         /*O metodo preencherMatrizTexto será reponsavel por pegar os caracteres
         * do texto recebido do usuario e fazer a criptografia,
@@ -53,7 +53,7 @@ public class TextoCriptografico {
         return matrizString;
     }
 
-    void imprimirTextoCriptografado(char[][] matrizString, int sqtrTamanho){
+    public void imprimirTextoCriptografado(char[][] matrizString, int sqtrTamanho){
         //laço resosavel pela impressão da criptografia
         int contadorFrequencia = 0;
         for(int i = 0; i < sqtrTamanho; i++) {

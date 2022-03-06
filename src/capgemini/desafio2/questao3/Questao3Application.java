@@ -1,8 +1,10 @@
 package capgemini.desafio2.questao3;
 
+import capgemini.desafio2.questao3.domain.TextoCriptografico;
+
 import javax.swing.JOptionPane;
 
-public class Questao3 {
+public class Questao3Application {
 	
 	public static void main(String[] args) {
 		/*

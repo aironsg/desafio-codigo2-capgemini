@@ -1,0 +1,50 @@
+DOCUMENTAÇÃO QUESTÃO 1.
+
+Dentro do pacote questão 3 existem 3 arquivos.
+1- classe principal de exercução
+2- classe objeto
+3-classe teste
+
+ESPECIFICAÇÃO DA CLASSE PRINCIPAL.
+1-INFORMAÇÕES GERAIS.
+    dentro da classe principal foi criando um objeto Mediana, este objeto será responsavel por instanciar
+    os atributos: {numero,(list)numeros}.
+    e também fazer as chamadas dos 2 metodos necessários para a exercução da aplicação.
+    foi optado pelo uso da API interna do Java, (JOptionPane) para entrada de dados do usuario, para permitir
+    que a experiencia do usuario fosse assim o mais agradavel possivel.
+
+
+2-Nomes Variaveis:
+    2.1- PERGUNTA.
+    2.1.1-
+        A variavel pergunta é responsavel por da a condição para o loop da classe principal.
+
+    2.2-NUMEROSS
+    2.2.1-
+        A variavel numeros é uma variavel do tipo List, para armazenar os valores escolhidos pelo usuario e depois
+        transferir para o atributo List do objeto.
+
+
+3-OBJETOS:
+    3.1- LISTAMEDIANA
+
+    3.1.1-
+        A variavel de instancia listaMediana foi criada para da mais perfomace a classe principal, recebendo os dados
+        do usuario e fazendo as chamadas dos metodos necessários para mostrar a mediana dos valores escolhidos.
+
+
+4- ARQUIVO CLASSE MEDIANA.
+    4.1- ATRIBUTOS:
+        NUMERO(INTEGER)
+        NUMEROS(LIST INTEGER)
+
+    4.2- METODOS:
+
+         FINDMEDIANA
+
+    4.2.1 - FINDMEDIANA.
+        O metodo findMediana() recebe como parametro a lista de numeros e retorna do valor da mediana,
+        dentro do metodo é feita a ordenação da lista, permitindo assim uma busca de forma correta do valor da mediana,
+        este metodo contem uma variavel chamada de posicaoMediana que recebe a divisão da lista por 2, esta variavel
+        é passada como paremetro do metodo get da lista para retornar assim a posição central da lista de numeros.
+
